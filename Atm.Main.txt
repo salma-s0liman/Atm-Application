@@ -15,17 +15,17 @@ public class Atm {
             case "yes":
                 System.out.print("Enter Your id : ");
                     int id = s.nextInt();
-                while(id!=a2.id){
+                while(id!=a1.getId()){
                     System.out.println("Wrong Id ,Please try again.");
                     System.out.print("Enter Your id : ");
                         id = s.nextInt();
                 }
                 System.out.print("Enter Your Password : ");
                     int password = s.nextInt();
-                while(password!=a2.password){
+                while(password!=a1.getPassword()){
                     System.out.println("Wrong Password ,Please try again.");
                     System.out.print("Enter Your password : ");
-                        password = s.nextInt();
+                        password = s.nextInt();}
                  while (x){
            System.out.println("\nEnter 1 To Deposit.\nEnter 2 To Withdraw.\nEnter 3 To Check Blance.\nEnter 4 To Exist.");
            int c = s.nextInt();
@@ -57,7 +57,7 @@ public class Atm {
                  System.out.println(" Invalid Choice,Please Try Again. ");
         }
 }
-                }    
+         
             break;
              case"no":
              String firstName,lastName,emailAdress;
