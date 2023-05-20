@@ -1,0 +1,31 @@
+
+package atm;
+import java.util.*;
+
+
+public class Account extends Registration implements Service{
+     
+   
+    
+    public void deposit(double deposit){
+        this.balance = this.balance + deposit;
+        System.out.println(deposit + " Deposited.");
+    }    
+    
+    public void withDraw(double withdraw){
+        Scanner s = new Scanner(System.in);
+        while(withdraw>this.balance){
+            System.out.println("Insufficient Balance.\nPlease Insert Another Number :  ");
+                with = s.nextInt();
+        }        
+            this.balance = this.balance - withdraw;
+            System.out.println(withdraw + " Withdrown.");
+        
+    }
+    
+}
+
+   
+    
+    
+
