@@ -12,5 +12,5 @@ package bankingsystem;
 public interface Service {
     public void withDraw(double withdraw);
     public void deposit(double deposit);
- 
+     public void checkBalance();
 }
