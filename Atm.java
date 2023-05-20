@@ -47,7 +47,8 @@ public class Atm {
             break;
             
             case 3 :
-                   a1.checkBalance();
+                  a1.checkBalance();
+
 
             break;
             
@@ -71,7 +72,7 @@ public class Atm {
                     String EmailAddress = s.next();
                     a2.setEmailAddress(EmailAddress);
                 System.out.print("Enter Your Balance : ");
-                    double balance = s.nextDouble();
+                    int balance = s.nextInt();
                     a2.setBalance(balance);
                 System.out.println("Your Registration is Successful.");
                 System.out.println();
@@ -80,7 +81,7 @@ public class Atm {
                     System.out.println("\nEnter 1 To Login.\nEnter 2 To Exist.");
                      System.out.println();
                         int c = s.nextInt();
-        
+                 
         switch(c){
             case 1 :
                 System.out.print("Enter Your id : ");
@@ -118,6 +119,7 @@ public class Atm {
 
                                 case 3 :
                                      a1.checkBalance();
+
                                 break;
 
                                 case 4 :
