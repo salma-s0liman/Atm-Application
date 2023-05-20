@@ -3,27 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bankingsystem;
-import java.util.*;
+package atm;
 
+/**
+ *
+ * @author Salma Soliman
+ */
 public class Registration {
     private String firstName;
     private String lastName;
     private String emailAddress;
-    private long balance;
-    private String password;
-    private long id;
+    static double balance;
+    int id;
+    int password;
    
     public Registration() {
     }
 
-    public Registration(String firstName, String lastName, String emailAddress, long balance, String password, long id) {
+    public Registration(String firstName, String lastName, String emailAddress, double balance, int id, int password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
         this.balance = balance;
-        this.password = password;
         this.id = id;
+        this.password = password;
     }
 
    
@@ -52,34 +55,34 @@ public class Registration {
         this.emailAddress = emailAddress;
     }
  
-     public long getBalance() {
-        return balance=20000;
+     public double getBalance() {
+        return balance ;
     }
 
-    public void setBalance(long balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
     
     
-    public long getId() {
-        return id=1234567;
+    public int getId() {
+        return id = 1234567;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
 
-    public String getPassword() {
-        return password=12345;
+    public int getPassword() {
+        return password = 1234;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(int password) {
         this.password = password;
     }
     
    public void display(){
-       id= (long)(Math.random()*1000000000);
+       id= (int)(10000000+Math.random()*999999999);
        password = (int)(100+Math.random()*9999);
        System.out.println("Your Id is : " + id);
        System.out.println("your password is : " + password);
