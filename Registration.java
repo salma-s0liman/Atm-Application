@@ -80,6 +80,7 @@ public class Registration {
     
    public void display(){
        id= (long)(Math.random()*1000000000);
+       password = (int)(100+Math.random()*9999);
        System.out.println("Your Id is : " + id);
        System.out.println("your password is : " + password);
    
