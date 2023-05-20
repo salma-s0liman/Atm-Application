@@ -6,7 +6,7 @@ import java.util.*;
 public class Account extends Registration implements Service{
      
    
-    
+    int balance=20000;
     public void deposit(double deposit){
         this.balance = this.balance + deposit;
         System.out.println(deposit + " Deposited.");
@@ -22,7 +22,11 @@ public class Account extends Registration implements Service{
             System.out.println(withdraw + " Withdrown.");
         
     }
-    
+      @Override
+    public void checkBalance(){
+        System.out.print("your Balance is : " + this.balance);
+    }
+
 }
 
    
