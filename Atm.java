@@ -47,7 +47,7 @@ public class Atm {
             break;
             
             case 3 :
-                    System.out.print("Your balance is : " + a2.getBalance());
+                   a1.checkBalance();
 
             break;
             
@@ -117,7 +117,7 @@ public class Atm {
                                 break;
 
                                 case 3 :
-                                    System.out.print("Your balance is : " + a2.getBalance());
+                                     a1.checkBalance();
                                 break;
 
                                 case 4 :
