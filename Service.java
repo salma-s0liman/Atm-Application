@@ -10,8 +10,7 @@ package bankingsystem;
  * @author Time Computer
  */
 public interface Service {
-    public void withDraw(int with);
-    public void deposit(int dep);
-    public void checkBalance();
+    public void withDraw(double withdraw);
+    public void deposit(double deposit);
  
 }
