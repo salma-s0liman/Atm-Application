@@ -53,7 +53,7 @@ public class Registration {
     }
  
      public long getBalance() {
-        return balance;
+        return balance=20000;
     }
 
     public void setBalance(long balance) {
@@ -62,7 +62,7 @@ public class Registration {
     
     
     public long getId() {
-        return id;
+        return id=1234567;
     }
 
     public void setId(long id) {
@@ -71,7 +71,7 @@ public class Registration {
 
 
     public String getPassword() {
-        return password;
+        return password=12345;
     }
 
     public void setPassword(String password) {
